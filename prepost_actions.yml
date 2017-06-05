@@ -2,7 +2,7 @@
 services:
 - module: shellexec
   prepare:
-  #- rm -r tmp_logs
+  - rm -r tmp_logs
   - mkdir tmp_logs
   startup:
   - echo 1 > tmp_logs/example.txt
