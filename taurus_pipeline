@@ -1,4 +1,3 @@
 node {
-  stage 'Run JMeter Test'
   sh 'bzt execution.yml'
 }
