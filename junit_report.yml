@@ -1,0 +1,4 @@
+reporting:
+- module: junit-xml
+  filename: junit_report.xml
+  data-source: pass-fail
