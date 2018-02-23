@@ -1,6 +1,6 @@
 ---
 execution:
-- concurrency: 100
+- concurrency: 200
   hold-for: 20m
   ramp-up: 3m
   scenario: Thread Group
