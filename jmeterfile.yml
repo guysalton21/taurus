@@ -1,0 +1,17 @@
+---
+execution:
+- concurrency: 10
+  hold-for: 5m
+  ramp-up: 60s
+  scenario: jmx
+scenarios:
+  jmx:
+    script: blazedemo.jmx
+    properties:  
+      log_level.jmeter: DEBUG
+    variables: 
+      path_to_cities_csv: cities.csv
+      path_to_presons_csv: persons.csv
+    modifications:
+      disable: 
+      - Constant Timer
