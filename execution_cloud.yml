@@ -2,7 +2,7 @@
 execution:
 - concurrency: 300
   hold-for: 8m
-  ramp-up: 3m
+  ramp-up: 2m
   locations:
     us-east-1: 1
     us-west-1: 2
