@@ -1,5 +1,4 @@
----
-services:
+reporting:
 - module: passfail
   criteria:
   - avg-rt>10s for 7s, stop as failed
