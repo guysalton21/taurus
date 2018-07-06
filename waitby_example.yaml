@@ -1,9 +1,9 @@
 execution:
 - executor: selenium
   locations:
-    harbor-59b53539a903a9f9037b23c7: 1
-    #eu-west-2: 2
-    #eu-west-1: 1
+    #harbor-59b53539a903a9f9037b23c7: 1
+    eu-west-2: 2
+    eu-west-1: 1
   scenario: homepage_selenium
   iterations: 1
 scenarios:
