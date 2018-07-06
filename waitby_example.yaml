@@ -1,0 +1,30 @@
+execution:
+- executor: selenium
+  locations:
+    harbor-59b53539a903a9f9037b23c7: 1
+    #eu-west-2: 2
+    #eu-west-1: 1
+  scenario: homepage_selenium
+  iterations: 1
+scenarios:
+  homepage_selenium:
+    browser: Chrome
+    timeout: 10s
+    variables:
+      item_xpath: '//*[@id="tbodyid"]/div[1]/div/div/h4/a'
+      assertion: STORE
+    default-address: 'http://www.demoblaze.com'
+    requests:
+    - label: homepage
+      url: /
+      actions:
+      - waitByXPath(${item_xpath})
+      # - assertTitle(${assertion})
+    - label: itempage
+      actions:
+      - clickByXPath(${item_xpath})
+
+---
+modules:
+  blazemeter:
+    test: seleniumExample
