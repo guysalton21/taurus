@@ -5,7 +5,7 @@ execution:
     eu-west-2: 2
     eu-west-1: 1
   scenario: homepage_selenium
-  iterations: 1
+  iterations: 2
 scenarios:
   homepage_selenium:
     browser: Chrome
