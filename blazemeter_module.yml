@@ -3,3 +3,4 @@ modules:
   blazemeter:
     account: 117582
     test: HLS Example
+    #report-name:
