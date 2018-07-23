@@ -4,8 +4,8 @@ execution:
   hold-for: 8m
   ramp-up: 2m
   locations:
-    us-east-1: 1
-    us-west-1: 2
+    eu-west-1: 1
+    eu-west-1: 2
   scenario: Purchase Flight
 scenarios:
   Purchase Flight:
