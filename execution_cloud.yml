@@ -20,12 +20,7 @@ scenarios:
         fromPort: Paris
         toPort: Buenos Aires
 
-services:
-- module: shellexec
-  prepare:  
-  - git_commit_id=$(git rev-parse HEAD)
-
 modules:
   blazemeter:
-    test: Load Test
-    report-name: ${git_commit_id}
+    test: Blazedemo
+    report-name: Blazedemo
