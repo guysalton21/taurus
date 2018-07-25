@@ -3,7 +3,9 @@ execution:
 - executor: gatling
   scenario: existing
 
-  concurrency: 10000
+  concurrency:
+    local: 10
+    cloud: 10000
   ramp-up: 1m
   steps: 3
   hold-for: 5m
