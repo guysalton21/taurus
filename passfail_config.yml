@@ -1,5 +1,5 @@
 reporting:
 - module: passfail
   criteria:
-  - avg-rt>10s for 7s, stop as failed
-  - hits of reserve >1000 for 13s, continue as failed
+  - avg-rt>100s for 7s, stop as failed
+  - failures>2%, stop as failed
