@@ -18,3 +18,8 @@ scenarios:
   existing:
     script: blazedemo.scala
     simulation: examples.gatling.blazedemo
+    
+modules:
+  cloud:
+    test: 10K users Gatling Test
+    report-name: Jenkins Gatling Test
