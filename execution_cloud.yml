@@ -23,6 +23,7 @@ scenarios:
 
 modules:
   blazemeter:
-    project: Production Tests
+    workspace: 109682
+    project: 302113    
     test: Blazedemo
     report-name: Blazedemo
