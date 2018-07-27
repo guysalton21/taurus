@@ -1,11 +1,12 @@
 ---
 execution:
-- concurrency: 400
+- concurrency: 1000
   hold-for: 8m
   ramp-up: 2m
   locations:
     eu-west-1: 1
     eu-west-1: 2
+    eu-west-3: 1
   scenario: Purchase Flight
 scenarios:
   Purchase Flight:
