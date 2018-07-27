@@ -23,6 +23,7 @@ scenarios:
     
 modules:
   cloud:
-    project: Production Tests
+    workspace: 109682
+    project: 302113
     test: 1K users Gatling Test
     report-name: Jenkins Gatling Test
