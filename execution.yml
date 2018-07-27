@@ -1,8 +1,13 @@
 ---
 execution:
-- concurrency: 200
-  hold-for: 3m
-  ramp-up: 1m
+- concurrency: 1000
+  hold-for: 10
+  ramp-up: 2m
+  locations:
+    us-east-1: 50
+    us-west-1: 50
+    eu-west-1: 50
+    eu-west-2: 50
   scenario: Thread Group
 scenarios:
   Thread Group:
@@ -16,3 +21,10 @@ scenarios:
       body:
         fromPort: Paris
         toPort: Buenos Aires
+
+modules:
+  cloud:
+    workspace: 109682
+    project: 302113
+    test: PerfTest
+    report-name: PerfTest 1K
