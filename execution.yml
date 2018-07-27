@@ -25,6 +25,5 @@ scenarios:
 modules:
   cloud:
     workspace: 109682
-    project: 302113
     test: PerfTest
     report-name: PerfTest 1K
