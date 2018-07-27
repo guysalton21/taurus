@@ -24,6 +24,6 @@ scenarios:
 modules:
   blazemeter:
     workspace: 109682
-    project: 302113    
-    test: Blazedemo
-    report-name: Blazedemo
+    project: 302113
+    test: Performance Test 1K
+    report-name: Performance 1K
