@@ -4,7 +4,7 @@ execution:
   scenario: existing
 
   concurrency:
-    local: 10
+    local: 20
     cloud: 1000
   ramp-up: 1m
   steps: 3
