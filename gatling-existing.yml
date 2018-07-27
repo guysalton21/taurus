@@ -5,7 +5,7 @@ execution:
 
   concurrency:
     local: 10
-    cloud: 10000
+    cloud: 1000
   ramp-up: 1m
   steps: 3
   hold-for: 7m
@@ -23,5 +23,5 @@ scenarios:
     
 modules:
   cloud:
-    test: 10K users Gatling Test
+    test: 1K users Gatling Test
     report-name: Jenkins Gatling Test
