@@ -25,4 +25,5 @@ modules:
   cloud:
     workspace: 109682
     test: 1K users Gatling Test
+    launch-existing-test: true
     report-name: Jenkins Gatling Test
