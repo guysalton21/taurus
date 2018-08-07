@@ -28,5 +28,4 @@ scenarios:
 modules:
   blazemeter:
     workspace: 109682
-    project: 302113
     test: seleniumExample
