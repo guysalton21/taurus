@@ -20,9 +20,3 @@ scenarios:
   existing:
     script: blazedemo.scala
     simulation: examples.gatling.blazedemo
-    
-modules:
-  cloud:
-    workspace: 109682
-    launch-existing-test: true
-    report-name: Jenkins Gatling Test
