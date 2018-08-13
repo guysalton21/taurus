@@ -8,7 +8,7 @@ execution:
     cloud: 1000
   ramp-up: 1m
   steps: 3
-  hold-for: 7m
+  hold-for: 10m
 
   locations:
     us-east-1: 50
