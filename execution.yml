@@ -1,6 +1,6 @@
 ---
 execution:
-- concurrency: 1000
+- concurrency: 500
   hold-for: 10
   ramp-up: 2m
   locations:
@@ -21,9 +21,3 @@ scenarios:
       body:
         fromPort: Paris
         toPort: Buenos Aires
-
-modules:
-  cloud:
-    workspace: 109682
-    test: PerfTest
-    report-name: PerfTest 1K
