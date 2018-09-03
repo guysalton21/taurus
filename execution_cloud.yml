@@ -21,12 +21,3 @@ scenarios:
       body:
         fromPort: Paris
         toPort: Buenos Aires
-
-modules:
-  cloud:
-    account: 117582
-    workspace: 109682
-    project: 302113
-    test: Performance Test 1K
-    launch-existing-test: true
-    report-name: Performance 1K
