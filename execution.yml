@@ -1,31 +1,6 @@
----
-execution:
-- concurrency: 3000
-  hold-for: 10
-  ramp-up: 2m
-  locations:
-    us-east-1: 50
-    us-west-1: 50
-    eu-west-1: 50
-    eu-west-2: 50
-  scenario: Thread Group
-scenarios:
-  Thread Group:
-    requests:
-    - label: blazedemo
-      method: GET
-      url: http://blazedemo.com/
-    - label: reserve
-      method: POST
-      url: http://blazedemo.com/reserve.php
-      body:
-        fromPort: Paris
-        toPort: Buenos Aires
-
 modules:
   cloud:
     test: Performance Test
-    launch-existing-test: true  # you can omit this field if your `execution` section is empty
     account: 117582
     workspace: 109682
     project: 302113
