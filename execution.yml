@@ -21,3 +21,7 @@ scenarios:
       body:
         fromPort: Paris
         toPort: Buenos Aires
+
+modules:
+  cloud:
+    test: https://a.blazemeter.com/app/#/accounts/117582/workspaces/109682/projects/302113/tests/6225625
