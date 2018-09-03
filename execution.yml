@@ -24,4 +24,8 @@ scenarios:
 
 modules:
   cloud:
-    test: https://a.blazemeter.com/app/#/accounts/117582/workspaces/109682/projects/302113/tests/6225625
+    test: Performance Test
+    launch-existing-test: true  # you can omit this field if your `execution` section is empty
+    account: 117582
+    workspace: 109682
+    project: 302113
