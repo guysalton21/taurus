@@ -21,3 +21,9 @@ scenarios:
       body:
         fromPort: Paris
         toPort: Buenos Aires
+
+reporting:
+- module: passfail
+  criteria:
+  - avg-rt>150ms for 10s, stop as failed
+  - fail>50% for 10s, stop as failed
