@@ -25,5 +25,5 @@ scenarios:
 reporting:
 - module: passfail
   criteria:
-  - avg-rt>150ms for 10s, stop as failed
+  - avg-rt>1500ms for 10s, stop as failed
   - fail>50% for 10s, stop as failed
