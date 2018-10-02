@@ -1,0 +1,88 @@
+{
+	"variables": [],
+	"info": {
+		"name": "BlazeDemoAPITest",
+		"_postman_id": "01df5ccf-a377-2e8a-9a7a-106235a64d23",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Hompage",
+			"request": {
+				"url": "http://blazedemo.com",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST Reservation",
+			"request": {
+				"url": "http://blazedemo.com/reserve.php",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "toPort",
+							"value": "Buenos Aires",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "fromPort",
+							"value": "Boston",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST Choose Flight",
+			"request": {
+				"url": "http://blazedemo.com/purchase.php",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "toPort",
+							"value": "Buenos Aires",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "fromPort",
+							"value": "Boston",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "flight",
+							"value": "43",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "472.56",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
