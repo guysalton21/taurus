@@ -3,16 +3,12 @@ execution:
 - executor: gatling
   scenario: existing
 
-  concurrency:
-    local: 20
-    cloud: 1000
+  concurrency: 2000
   ramp-up: 1m
   steps: 3
-  hold-for: 10m
+  hold-for: 5m
 
   locations:
-    us-east-1: 50
-    us-west-1: 50
     eu-west-1: 50
     eu-west-2: 50
 
@@ -20,3 +16,7 @@ scenarios:
   existing:
     script: blazedemo.scala
     simulation: examples.gatling.blazedemo
+
+modules:
+  cloud:
+    test: Jenkins 2K users Gatling Test
