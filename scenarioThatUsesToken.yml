@@ -17,4 +17,4 @@ scenarios:
       method: GET
       url: http://blazedemo.com/
     variables:
-      fileName: token.txt
+      fileName: /var/lib/jenkins/workspace/TaurusPerfTestToken/token.txt
