@@ -1,0 +1,20 @@
+---
+execution:
+- concurrency: 1
+  iterations: 1
+  scenario: scenario that uses the token
+scenarios:
+  scenario that uses the token:
+    data-sources:
+    - delimiter: ','
+      loop: true
+      path: ${fileName}
+      quoted: false 
+      variable-names: token
+    requests:
+    - follow-redirects: true
+      label: the token is ${token}
+      method: GET
+      url: http://blazedemo.com/
+    variables:
+      fileName: token.txt

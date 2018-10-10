@@ -1,0 +1,27 @@
+---
+execution:
+- concurrency: 1
+  iterations: 1
+  scenario: Get token and write to it to a file
+
+scenarios:
+  Get token and write to it to a file:
+    requests:
+    - extract-regexp:
+        CSRF_Token:
+          default: NOT_FOUND
+          match-no: 1 
+          regexp: '"csrf-token" content="(.*)"'
+          template: $1$
+      follow-redirects: true
+      jsr223:
+      - compile-cache: 'true'
+        execute: after
+        language: beanshell
+        parameters: null
+        script-text: "import org.apache.jmeter.services.FileServer;\n\nJCSRF_Token = vars.get(\"CSRF_Token\");\nJfileName = vars.get(\"fileName\");\n\nf = new FileOutputStream(JfileName, true);\np = new PrintStream(f); \nthis.interpreter.setOut(p); \np.print(JCSRF_Token);\nf.close();p.close();"
+      label: send request to get token
+      method: GET
+      url: http://blazedemo.com/home
+    variables:
+      fileName: token.txt
