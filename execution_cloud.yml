@@ -22,6 +22,10 @@ scenarios:
         fromPort: Paris
         toPort: Buenos Aires
 
+modules:
+  cloud:
+    workspace: 228149
+
 reporting:
 - module: passfail
   criteria:
